@@ -1,10 +1,9 @@
-arr = list(map(int,input("Enter the values of array: ").split()))
-
-
-def rev(left,right):
-   if left>=right:
-      return
-   arr[left],arr[right]=arr[right],arr[left]
-   rev(left+1,right-1)
-rev(0,len(arr)-1)
-print(arr)
+n=int(input("enter a num: "))
+def fib(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fib(n-1)+fib(n-2)
+result=fib(n)
+print(result)
